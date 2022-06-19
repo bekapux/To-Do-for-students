@@ -18,7 +18,9 @@ const clearBtn = document.getElementById("clearBtn");
 
 addBtn.addEventListener('click', (e) => {
     e.preventDefault();
+    
     const task = input.value;
+    if(task=="") return;
     let li = document.createElement('li');
     li.classList.add('list-group-item');
     li.classList.add('d-flex');
