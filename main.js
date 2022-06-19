@@ -16,7 +16,8 @@ const input = document.getElementById("taskInput");
 const addBtn = document.getElementById("addBtn");
 const clearBtn = document.getElementById("clearBtn");
 
-addBtn.addEventListener('click', () => {
+addBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     const task = input.value;
     let li = document.createElement('li');
     li.classList.add('list-group-item');
